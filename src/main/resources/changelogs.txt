@@ -9,7 +9,7 @@ Major Update
 
   Changes
 •   Changed the id of all lantern items to lamp
-•   Changed many textures
+•   Changed a bunch of textures to become more up to date with the newer textures :)
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
