@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "excessive_building",
+  "version": "${version}",
+
+  "name": "Excessive Building",
+  "description": "Excessive Building is a mod that adds a large amount of new vanilla-style blocks to the game to enhance the user's building experience!",
+  "authors": [
+    "Yirmiri"
+  ],
+  "contact": {
+    "homepage": "*",
+    "sources": "*"
+  },
+
+  "license": "MIT License",
+  "icon": "assets/excessive_building/excessive_building_title.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.yirmiri.excessive_building.ExcessiveBuilding"
+    ],
+    "client": [
+      "net.yirmiri.excessive_building.ExcessiveBuildingClient"
+    ]
+  },
+  "mixins": [
+    "excessive_building.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "fabric": "*",
+    "minecraft": "~1.20.1",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
