@@ -1,4 +1,4 @@
-package net.yirmiri.excessive_building.world;
+package net.yirmiri.excessive_building.worldgen;
 
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;

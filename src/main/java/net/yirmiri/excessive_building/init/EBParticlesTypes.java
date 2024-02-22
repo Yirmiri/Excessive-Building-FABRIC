@@ -9,7 +9,7 @@ import net.yirmiri.excessive_building.ExcessiveBuilding;
 public class EBParticlesTypes {
     public static final DefaultParticleType ANCIENT_PARTICLE = FabricParticleTypes.simple();
 
-    public static void registerParticles() {
+    public static void registerParticleTypes() {
         Registry.register(Registries.PARTICLE_TYPE, new Identifier(ExcessiveBuilding.MODID, "ancient_particle"), ANCIENT_PARTICLE);
     }
 }

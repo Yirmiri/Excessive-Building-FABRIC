@@ -20,7 +20,7 @@ public class EBItems {
         return Registry.register(Registries.ITEM, new Identifier(ExcessiveBuilding.MODID, name), item);
     }
 
-    public static void registerModItems() {
+    public static void registerItems() {
         ExcessiveBuilding.LOGGER.info("Registering Items for " + ExcessiveBuilding.MODID);
     }
 }

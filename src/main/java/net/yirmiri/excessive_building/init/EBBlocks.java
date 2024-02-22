@@ -12,7 +12,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.yirmiri.excessive_building.ExcessiveBuilding;
 import net.yirmiri.excessive_building.block.*;
-import net.yirmiri.excessive_building.world.tree.AncientSaplingGenerator;
+import net.yirmiri.excessive_building.worldgen.tree.AncientSaplingGenerator;
 
 public class EBBlocks {
 
@@ -1872,7 +1872,7 @@ public class EBBlocks {
         return item;
     }
 
-    public static void registerModBlocks() {
+    public static void registerBlocks() {
         ExcessiveBuilding.LOGGER.info("Registering Blocks for " + ExcessiveBuilding.MODID);
     }
 }

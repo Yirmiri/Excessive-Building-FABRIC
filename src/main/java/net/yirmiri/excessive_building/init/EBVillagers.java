@@ -8,9 +8,6 @@ import net.minecraft.village.VillagerProfession;
 import net.yirmiri.excessive_building.init.EBBlocks;
 
 public class EBVillagers {
-    public static void registerModStuffs() {
-        registerVillagerTrades();
-    }
 
     private static void registerVillagerTrades() {
         TradeOfferHelper.registerVillagerOffers(VillagerProfession.MASON, 5,
@@ -19,5 +16,9 @@ public class EBVillagers {
                 new ItemStack(EBBlocks.ASPHALT, 12),
                 16, 30, 0.05f));
         });
+    }
+
+    public static void registerVillagers() {
+        registerVillagerTrades();
     }
 }

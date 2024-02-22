@@ -12,11 +12,11 @@ public class ExcessiveBuilding implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		EBItems.registerModItems();
-		EBBlocks.registerModBlocks();
-		EBVillagers.registerModStuffs();
+		EBBlocks.registerBlocks();
+		EBItems.registerItems();
+		EBVillagers.registerVillagers();
 		EBItemGroups.registerItemGroups();
-		EBParticlesTypes.registerParticles();
+		EBParticlesTypes.registerParticleTypes();
 
 		StrippableBlockRegistry.register(EBBlocks.ANCIENT_LOG, EBBlocks.STRIPPED_ANCIENT_LOG);
 		StrippableBlockRegistry.register(EBBlocks.ANCIENT_WOOD, EBBlocks.STRIPPED_ANCIENT_WOOD);
