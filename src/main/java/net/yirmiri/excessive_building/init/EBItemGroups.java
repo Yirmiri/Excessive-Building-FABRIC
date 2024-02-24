@@ -13,8 +13,7 @@ import net.yirmiri.excessive_building.init.EBItems;
 
 public class EBItemGroups {
         public static ItemGroup EXCESSIVE_BUILDING_TAB = Registry.register(Registries.ITEM_GROUP, new Identifier(ExcessiveBuilding.MODID, "excessive_building_tab"),
-                FabricItemGroup.builder().displayName(Text.translatable("excessive_building_tab"))
-                        .icon(() -> new ItemStack(EBBlocks.LOGO_BLOCK)).entries((displayContext, entries) -> {
+                FabricItemGroup.builder().displayName(Text.translatable("excessive_building_tab")).icon(() -> new ItemStack(EBBlocks.LOGO_BLOCK)).entries((displayContext, entries) -> {
                             entries.add(EBBlocks.CHISELED_OAK);
                             entries.add(EBBlocks.OAK_MOSAIC);
                             entries.add(EBBlocks.OAK_MOSAIC_STAIRS);
@@ -62,6 +61,49 @@ public class EBItemGroups {
                             entries.add(EBBlocks.CHERRY_MOSAIC_VERTICAL_STAIRS);
                             entries.add(EBBlocks.CHERRY_MOSAIC_SLAB);
                             entries.add(EBBlocks.CHERRY_LADDER);
+                            entries.add(EBBlocks.MAPLE_LOG);
+                            entries.add(EBBlocks.MAPLE_WOOD);
+                            entries.add(EBBlocks.STRIPPED_MAPLE_LOG);
+                            entries.add(EBBlocks.STRIPPED_MAPLE_WOOD);
+                            entries.add(EBBlocks.RED_MAPLE_LEAVES);
+                            entries.add(EBBlocks.ORANGE_MAPLE_LEAVES);
+                            entries.add(EBBlocks.YELLOW_MAPLE_LEAVES);
+                            entries.add(EBBlocks.MAPLE_PLANKS);
+                            entries.add(EBBlocks.MAPLE_STAIRS);
+                            entries.add(EBBlocks.MAPLE_VERTICAL_STAIRS);
+                            entries.add(EBBlocks.MAPLE_SLAB);
+                            entries.add(EBBlocks.CHISELED_MAPLE);
+                            entries.add(EBBlocks.MAPLE_MOSAIC);
+                            entries.add(EBBlocks.MAPLE_MOSAIC_STAIRS);
+                            entries.add(EBBlocks.MAPLE_MOSAIC_VERTICAL_STAIRS);
+                            entries.add(EBBlocks.MAPLE_MOSAIC_SLAB);
+                            entries.add(EBBlocks.MAPLE_DOOR);
+                            entries.add(EBBlocks.MAPLE_TRAPDOOR);
+                            entries.add(EBBlocks.MAPLE_FENCE);
+                            entries.add(EBBlocks.MAPLE_FENCE_GATE);
+                            entries.add(EBBlocks.MAPLE_BUTTON);
+                            entries.add(EBBlocks.MAPLE_PRESSURE_PLATE);
+                            entries.add(EBBlocks.MAPLE_LADDER);
+                            entries.add(EBBlocks.WILLOW_LOG);
+                            entries.add(EBBlocks.WILLOW_WOOD);
+                            entries.add(EBBlocks.STRIPPED_WILLOW_LOG);
+                            entries.add(EBBlocks.STRIPPED_WILLOW_WOOD);
+                            entries.add(EBBlocks.WILLOW_PLANKS);
+                            entries.add(EBBlocks.WILLOW_STAIRS);
+                            entries.add(EBBlocks.WILLOW_VERTICAL_STAIRS);
+                            entries.add(EBBlocks.WILLOW_SLAB);
+                            entries.add(EBBlocks.CHISELED_WILLOW);
+                            entries.add(EBBlocks.WILLOW_MOSAIC);
+                            entries.add(EBBlocks.WILLOW_MOSAIC_STAIRS);
+                            entries.add(EBBlocks.WILLOW_MOSAIC_VERTICAL_STAIRS);
+                            entries.add(EBBlocks.WILLOW_MOSAIC_SLAB);
+                            entries.add(EBBlocks.WILLOW_DOOR);
+                            entries.add(EBBlocks.WILLOW_TRAPDOOR);
+                            entries.add(EBBlocks.WILLOW_FENCE);
+                            entries.add(EBBlocks.WILLOW_FENCE_GATE);
+                            entries.add(EBBlocks.WILLOW_BUTTON);
+                            entries.add(EBBlocks.WILLOW_PRESSURE_PLATE);
+                            entries.add(EBBlocks.WILLOW_LADDER);
                             entries.add(EBBlocks.ANCIENT_LOG);
                             entries.add(EBBlocks.ANCIENT_WOOD);
                             entries.add(EBBlocks.STRIPPED_ANCIENT_LOG);
@@ -364,11 +406,6 @@ public class EBItemGroups {
                             entries.add(EBBlocks.BLUE_NETHER_TILE_VERTICAL_STAIRS);
                             entries.add(EBBlocks.BLUE_NETHER_TILE_SLAB);
                             entries.add(EBBlocks.BLUE_NETHER_TILE_WALL);
-                            entries.add(EBBlocks.POLISHED_BASALT);
-                            entries.add(EBBlocks.POLISHED_BASALT_STAIRS);
-                            entries.add(EBBlocks.POLISHED_BASALT_VERTICAL_STAIRS);
-                            entries.add(EBBlocks.POLISHED_BASALT_SLAB);
-                            entries.add(EBBlocks.POLISHED_BASALT_WALL);
                             entries.add(EBBlocks.BLACKSTONE_BRICKS);
                             entries.add(EBBlocks.CRACKED_BLACKSTONE_BRICKS);
                             entries.add(EBBlocks.BLACKSTONE_BRICK_STAIRS);
@@ -445,9 +482,6 @@ public class EBItemGroups {
                             entries.add(EBBlocks.TERRACOTTA_TILES);
                             entries.add(EBBlocks.TERRACOTTA_TILE_STAIRS);
                             entries.add(EBBlocks.TERRACOTTA_TILE_SLAB);
-                            entries.add(EBBlocks.RAINBOW_TERRACOTTA_TILES);
-                            entries.add(EBBlocks.RAINBOW_TERRACOTTA_TILE_STAIRS);
-                            entries.add(EBBlocks.RAINBOW_TERRACOTTA_TILE_SLAB);
                             entries.add(EBBlocks.WHITE_TERRACOTTA_TILES);
                             entries.add(EBBlocks.WHITE_TERRACOTTA_TILE_STAIRS);
                             entries.add(EBBlocks.WHITE_TERRACOTTA_TILE_SLAB);
@@ -512,6 +546,10 @@ public class EBItemGroups {
                             entries.add(EBBlocks.KYANITE_BLOCK);
                             entries.add(EBBlocks.KYANITE_CLUSTER);
                             entries.add(EBItems.KYANITE_SHARDS);
+                            entries.add(EBBlocks.RED_MAPLE_SAPLING);
+                            entries.add(EBBlocks.ORANGE_MAPLE_SAPLING);
+                            entries.add(EBBlocks.YELLOW_MAPLE_SAPLING);
+                            entries.add(EBBlocks.WILLOW_SAPLING);
                             entries.add(EBBlocks.ANCIENT_SAPLING);
                             entries.add(EBItems.ANCIENT_FRUIT);
                             entries.add(EBBlocks.STONE_LAMP);

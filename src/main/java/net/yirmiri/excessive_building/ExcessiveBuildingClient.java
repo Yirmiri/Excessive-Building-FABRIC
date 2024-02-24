@@ -44,6 +44,31 @@ public class ExcessiveBuildingClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(EBBlocks.CRIMSON_LADDER, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(EBBlocks.WARPED_LADDER, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(EBBlocks.ANCIENT_LADDER, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(EBBlocks.MAPLE_LADDER, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(EBBlocks.RED_MAPLE_LEAVES, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(EBBlocks.ORANGE_MAPLE_LEAVES, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(EBBlocks.YELLOW_MAPLE_LEAVES, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(EBBlocks.MAPLE_DOOR, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(EBBlocks.MAPLE_TRAPDOOR, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(EBBlocks.MAPLE_FENCE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(EBBlocks.MAPLE_FENCE_GATE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(EBBlocks.MAPLE_BUTTON, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(EBBlocks.MAPLE_PRESSURE_PLATE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(EBBlocks.RED_MAPLE_SAPLING, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(EBBlocks.POTTED_RED_MAPLE_SAPLING, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(EBBlocks.ORANGE_MAPLE_SAPLING, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(EBBlocks.POTTED_ORANGE_MAPLE_SAPLING, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(EBBlocks.YELLOW_MAPLE_SAPLING, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(EBBlocks.POTTED_YELLOW_MAPLE_SAPLING, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(EBBlocks.WILLOW_LADDER, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(EBBlocks.WILLOW_DOOR, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(EBBlocks.WILLOW_TRAPDOOR, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(EBBlocks.WILLOW_FENCE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(EBBlocks.WILLOW_FENCE_GATE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(EBBlocks.WILLOW_BUTTON, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(EBBlocks.WILLOW_PRESSURE_PLATE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(EBBlocks.WILLOW_SAPLING, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(EBBlocks.POTTED_WILLOW_SAPLING, RenderLayer.getCutout());
 
         BlockRenderLayerMap.INSTANCE.putBlock(EBBlocks.COPPER_GRATE, RenderLayer.getCutoutMipped());
         BlockRenderLayerMap.INSTANCE.putBlock(EBBlocks.EXPOSED_COPPER_GRATE, RenderLayer.getCutoutMipped());
@@ -57,5 +82,7 @@ public class ExcessiveBuildingClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(EBBlocks.IRON_GRATE, RenderLayer.getCutoutMipped());
 
         ParticleFactoryRegistry.getInstance().register(EBParticlesTypes.ANCIENT_PARTICLE, FallingLeafParticle.Factory::new);
+        ParticleFactoryRegistry.getInstance().register(EBParticlesTypes.ORANGE_MAPLE_PARTICLE, FallingLeafParticle.Factory::new);
+        ParticleFactoryRegistry.getInstance().register(EBParticlesTypes.YELLOW_MAPLE_PARTICLE, FallingLeafParticle.Factory::new);
     }
 }

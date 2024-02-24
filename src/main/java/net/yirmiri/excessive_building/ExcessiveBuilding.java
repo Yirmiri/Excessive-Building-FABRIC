@@ -20,5 +20,9 @@ public class ExcessiveBuilding implements ModInitializer {
 
 		StrippableBlockRegistry.register(EBBlocks.ANCIENT_LOG, EBBlocks.STRIPPED_ANCIENT_LOG);
 		StrippableBlockRegistry.register(EBBlocks.ANCIENT_WOOD, EBBlocks.STRIPPED_ANCIENT_WOOD);
+		StrippableBlockRegistry.register(EBBlocks.MAPLE_LOG, EBBlocks.STRIPPED_MAPLE_LOG);
+		StrippableBlockRegistry.register(EBBlocks.MAPLE_WOOD, EBBlocks.STRIPPED_MAPLE_WOOD);
+		StrippableBlockRegistry.register(EBBlocks.WILLOW_LOG, EBBlocks.STRIPPED_WILLOW_LOG);
+		StrippableBlockRegistry.register(EBBlocks.WILLOW_WOOD, EBBlocks.STRIPPED_WILLOW_WOOD);
 	}
 }

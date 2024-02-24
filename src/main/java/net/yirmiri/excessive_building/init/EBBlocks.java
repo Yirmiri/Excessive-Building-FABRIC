@@ -1523,16 +1523,16 @@ public class EBBlocks {
             new Block(FabricBlockSettings.copy(Blocks.COPPER_BLOCK).luminance(state -> 3)));
 
     public static final Block COPPER_GRATE = registerBlock("copper_grate",
-            new OxidizableBlock(Oxidizable.OxidationLevel.UNAFFECTED, FabricBlockSettings.copy(Blocks.COPPER_BLOCK).nonOpaque()));
+            new OxidizableWaterloggableBlock(Oxidizable.OxidationLevel.UNAFFECTED, FabricBlockSettings.copy(Blocks.COPPER_BLOCK).nonOpaque()));
 
     public static final Block EXPOSED_COPPER_GRATE = registerBlock("exposed_copper_grate",
-            new OxidizableBlock(Oxidizable.OxidationLevel.EXPOSED, FabricBlockSettings.copy(Blocks.COPPER_BLOCK).nonOpaque()));
+            new OxidizableWaterloggableBlock(Oxidizable.OxidationLevel.EXPOSED, FabricBlockSettings.copy(Blocks.COPPER_BLOCK).nonOpaque()));
 
     public static final Block WEATHERED_COPPER_GRATE = registerBlock("weathered_copper_grate",
-            new OxidizableBlock(Oxidizable.OxidationLevel.WEATHERED, FabricBlockSettings.copy(Blocks.COPPER_BLOCK).nonOpaque()));
+            new OxidizableWaterloggableBlock(Oxidizable.OxidationLevel.WEATHERED, FabricBlockSettings.copy(Blocks.COPPER_BLOCK).nonOpaque()));
 
     public static final Block OXIDIZED_COPPER_GRATE = registerBlock("oxidized_copper_grate",
-            new OxidizableBlock(Oxidizable.OxidationLevel.OXIDIZED, FabricBlockSettings.copy(Blocks.COPPER_BLOCK).nonOpaque()));
+            new OxidizableWaterloggableBlock(Oxidizable.OxidationLevel.OXIDIZED, FabricBlockSettings.copy(Blocks.COPPER_BLOCK).nonOpaque()));
 
     public static final Block WAXED_COPPER_GRATE = registerBlock("waxed_copper_grate",
             new Block(FabricBlockSettings.copy(Blocks.COPPER_BLOCK).nonOpaque()));
@@ -1547,19 +1547,13 @@ public class EBBlocks {
             new Block(FabricBlockSettings.copy(Blocks.COPPER_BLOCK).nonOpaque()));
 
     public static final Block GOLD_GRATE = registerBlock("gold_grate",
-            new Block(FabricBlockSettings.copy(Blocks.GOLD_BLOCK).nonOpaque()));
+            new SimpleWaterloggableBlock(FabricBlockSettings.copy(Blocks.GOLD_BLOCK).nonOpaque()));
 
     public static final Block IRON_GRATE = registerBlock("iron_grate",
-            new Block(FabricBlockSettings.copy(Blocks.IRON_BLOCK).nonOpaque()));
-
-    public static final Block MUD_TILE_WALL = registerBlock("mud_tile_wall",
-            new WallBlock(FabricBlockSettings.copy(Blocks.MUD_BRICKS).requiresTool()));
+            new SimpleWaterloggableBlock(FabricBlockSettings.copy(Blocks.IRON_BLOCK).nonOpaque()));
 
     public static final Block NETHERITE_BRICK_WALL = registerBlock("netherite_brick_wall",
             new WallBlock(FabricBlockSettings.copy(Blocks.NETHERITE_BLOCK).requiresTool()));
-
-    public static final Block SNOW_BRICK_WALL = registerBlock("snow_brick_wall",
-            new WallBlock(FabricBlockSettings.copy(Blocks.SNOW_BLOCK).requiresTool()));
 
     public static final Block POLISHED_TUFF = registerBlock("polished_tuff",
             new Block(FabricBlockSettings.copy(Blocks.TUFF).requiresTool()));
@@ -1692,21 +1686,6 @@ public class EBBlocks {
 
     public static final Block CRACKED_BRICKS = registerBlock("cracked_bricks",
             new Block(FabricBlockSettings.copy(Blocks.BRICKS).requiresTool()));
-
-    public static final Block POLISHED_BASALT = registerBlock("polished_basalt",
-            new Block(FabricBlockSettings.copy(Blocks.BASALT).requiresTool()));
-
-    public static final Block POLISHED_BASALT_STAIRS = registerBlock("polished_basalt_stairs",
-            new StairsBlock(POLISHED_BASALT.getDefaultState(), FabricBlockSettings.copy(EBBlocks.POLISHED_CALCITE).requiresTool()));
-
-    public static final Block POLISHED_BASALT_SLAB = registerBlock("polished_basalt_slab",
-            new SlabBlock(FabricBlockSettings.copy(EBBlocks.POLISHED_BASALT).requiresTool()));
-
-    public static final Block POLISHED_BASALT_VERTICAL_STAIRS = registerBlock("polished_basalt_vertical_stairs",
-            new VerticalStairsBlock(FabricBlockSettings.copy(EBBlocks.POLISHED_BASALT)));
-
-    public static final Block POLISHED_BASALT_WALL = registerBlock("polished_basalt_wall",
-            new WallBlock(FabricBlockSettings.copy(EBBlocks.POLISHED_BASALT).requiresTool()));
 
     public static final Block HERRINGBONE_BRICKS = registerBlock("herringbone_bricks",
             new Block(FabricBlockSettings.copy(Blocks.BRICKS).requiresTool()));
@@ -1860,6 +1839,159 @@ public class EBBlocks {
 
     public static final Block TUFF_WALL = registerBlock("tuff_wall",
             new WallBlock(FabricBlockSettings.copy(Blocks.TUFF).requiresTool()));
+
+    public static final Block MAPLE_PLANKS = registerBlock("maple_planks",
+            new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS)));
+
+    public static final Block MAPLE_STAIRS = registerBlock("maple_stairs",
+            new StairsBlock(MAPLE_PLANKS.getDefaultState(), FabricBlockSettings.copy(EBBlocks.MAPLE_PLANKS)));
+
+    public static final Block MAPLE_SLAB = registerBlock("maple_slab",
+            new SlabBlock(FabricBlockSettings.copy(EBBlocks.MAPLE_PLANKS)));
+
+    public static final Block MAPLE_VERTICAL_STAIRS = registerBlock("maple_vertical_stairs",
+            new VerticalStairsBlock(FabricBlockSettings.copy(EBBlocks.MAPLE_PLANKS)));
+
+    public static final Block MAPLE_MOSAIC = registerBlock("maple_mosaic",
+            new Block(FabricBlockSettings.copy(EBBlocks.MAPLE_PLANKS)));
+
+    public static final Block MAPLE_MOSAIC_STAIRS = registerBlock("maple_mosaic_stairs",
+            new StairsBlock(MAPLE_MOSAIC.getDefaultState(), FabricBlockSettings.copy(EBBlocks.MAPLE_PLANKS)));
+
+    public static final Block MAPLE_MOSAIC_SLAB = registerBlock("maple_mosaic_slab",
+            new SlabBlock(FabricBlockSettings.copy(EBBlocks.MAPLE_PLANKS)));
+
+    public static final Block MAPLE_MOSAIC_VERTICAL_STAIRS = registerBlock("maple_mosaic_vertical_stairs",
+            new VerticalStairsBlock(FabricBlockSettings.copy(EBBlocks.MAPLE_PLANKS)));
+
+    public static final Block CHISELED_MAPLE = registerBlock("chiseled_maple",
+            new Block(FabricBlockSettings.copy(EBBlocks.MAPLE_PLANKS)));
+
+    public static final Block MAPLE_LOG = registerBlock("maple_log",
+            new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG)));
+
+    public static final Block MAPLE_WOOD = registerBlock("maple_wood",
+            new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG)));
+
+    public static final Block STRIPPED_MAPLE_LOG = registerBlock("stripped_maple_log",
+            new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG)));
+
+    public static final Block STRIPPED_MAPLE_WOOD = registerBlock("stripped_maple_wood",
+            new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG)));
+
+    public static final Block MAPLE_BUTTON = registerBlock("maple_button",
+            new ButtonBlock(FabricBlockSettings.copy(Blocks.OAK_PLANKS).noCollision().nonOpaque(), BlockSetType.OAK, 30, true));
+
+    public static final Block MAPLE_PRESSURE_PLATE = registerBlock("maple_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copy(Blocks.OAK_PLANKS).nonOpaque().noCollision(), BlockSetType.OAK));
+
+    public static final Block MAPLE_DOOR = registerBlock("maple_door",
+            new DoorBlock(FabricBlockSettings.copy(Blocks.OAK_PLANKS).nonOpaque(), BlockSetType.OAK));
+
+    public static final Block MAPLE_TRAPDOOR = registerBlock("maple_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copy(Blocks.OAK_PLANKS).nonOpaque(), BlockSetType.OAK));
+
+    public static final Block MAPLE_FENCE = registerBlock("maple_fence",
+            new FenceBlock(FabricBlockSettings.copy(Blocks.OAK_PLANKS)));
+
+    public static final Block MAPLE_FENCE_GATE = registerBlock("maple_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.copy(Blocks.OAK_PLANKS), WoodType.OAK));
+
+    public static final Block RED_MAPLE_SAPLING = registerBlock("red_maple_sapling",
+            new SaplingBlock(new AncientSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
+
+    public static final Block POTTED_RED_MAPLE_SAPLING = Registry.register(Registries.BLOCK, new Identifier(ExcessiveBuilding.MODID, "potted_red_maple_sapling"),
+            new FlowerPotBlock(RED_MAPLE_SAPLING, FabricBlockSettings.copyOf(Blocks.POTTED_OAK_SAPLING).nonOpaque()));
+
+    public static final Block RED_MAPLE_LEAVES = registerBlock("red_maple_leaves",
+            new AncientLeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES)));
+
+    public static final Block ORANGE_MAPLE_SAPLING = registerBlock("orange_maple_sapling",
+            new SaplingBlock(new AncientSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
+
+    public static final Block POTTED_ORANGE_MAPLE_SAPLING = Registry.register(Registries.BLOCK, new Identifier(ExcessiveBuilding.MODID, "potted_orange_maple_sapling"),
+            new FlowerPotBlock(ORANGE_MAPLE_SAPLING, FabricBlockSettings.copyOf(Blocks.POTTED_OAK_SAPLING).nonOpaque()));
+
+    public static final Block ORANGE_MAPLE_LEAVES = registerBlock("orange_maple_leaves",
+            new OrangeMapleLeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES)));
+
+    public static final Block YELLOW_MAPLE_SAPLING = registerBlock("yellow_maple_sapling",
+            new SaplingBlock(new AncientSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
+
+    public static final Block POTTED_YELLOW_MAPLE_SAPLING = Registry.register(Registries.BLOCK, new Identifier(ExcessiveBuilding.MODID, "potted_yellow_maple_sapling"),
+            new FlowerPotBlock(YELLOW_MAPLE_SAPLING, FabricBlockSettings.copyOf(Blocks.POTTED_OAK_SAPLING).nonOpaque()));
+
+    public static final Block YELLOW_MAPLE_LEAVES = registerBlock("yellow_maple_leaves",
+            new YellowMapleLeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES)));
+
+    public static final Block MAPLE_LADDER = registerBlock("maple_ladder",
+            new LadderBlock(FabricBlockSettings.copy(Blocks.LADDER)));
+
+    public static final Block WILLOW_PLANKS = registerBlock("willow_planks",
+            new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS)));
+
+    public static final Block WILLOW_STAIRS = registerBlock("willow_stairs",
+            new StairsBlock(WILLOW_PLANKS.getDefaultState(), FabricBlockSettings.copy(EBBlocks.WILLOW_PLANKS)));
+
+    public static final Block WILLOW_SLAB = registerBlock("willow_slab",
+            new SlabBlock(FabricBlockSettings.copy(EBBlocks.WILLOW_PLANKS)));
+
+    public static final Block WILLOW_VERTICAL_STAIRS = registerBlock("willow_vertical_stairs",
+            new VerticalStairsBlock(FabricBlockSettings.copy(EBBlocks.WILLOW_PLANKS)));
+
+    public static final Block WILLOW_MOSAIC = registerBlock("willow_mosaic",
+            new Block(FabricBlockSettings.copy(EBBlocks.WILLOW_PLANKS)));
+
+    public static final Block WILLOW_MOSAIC_STAIRS = registerBlock("willow_mosaic_stairs",
+            new StairsBlock(WILLOW_MOSAIC.getDefaultState(), FabricBlockSettings.copy(EBBlocks.WILLOW_PLANKS)));
+
+    public static final Block WILLOW_MOSAIC_SLAB = registerBlock("willow_mosaic_slab",
+            new SlabBlock(FabricBlockSettings.copy(EBBlocks.WILLOW_PLANKS)));
+
+    public static final Block WILLOW_MOSAIC_VERTICAL_STAIRS = registerBlock("willow_mosaic_vertical_stairs",
+            new VerticalStairsBlock(FabricBlockSettings.copy(EBBlocks.WILLOW_PLANKS)));
+
+    public static final Block CHISELED_WILLOW = registerBlock("chiseled_willow",
+            new Block(FabricBlockSettings.copy(EBBlocks.WILLOW_PLANKS)));
+
+    public static final Block WILLOW_LOG = registerBlock("willow_log",
+            new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG)));
+
+    public static final Block WILLOW_WOOD = registerBlock("willow_wood",
+            new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG)));
+
+    public static final Block STRIPPED_WILLOW_LOG = registerBlock("stripped_willow_log",
+            new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG)));
+
+    public static final Block STRIPPED_WILLOW_WOOD = registerBlock("stripped_willow_wood",
+            new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG)));
+
+    public static final Block WILLOW_BUTTON = registerBlock("willow_button",
+            new ButtonBlock(FabricBlockSettings.copy(Blocks.OAK_PLANKS).noCollision().nonOpaque(), BlockSetType.OAK, 30, true));
+
+    public static final Block WILLOW_PRESSURE_PLATE = registerBlock("willow_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copy(Blocks.OAK_PLANKS).nonOpaque().noCollision(), BlockSetType.OAK));
+
+    public static final Block WILLOW_DOOR = registerBlock("willow_door",
+            new DoorBlock(FabricBlockSettings.copy(Blocks.OAK_PLANKS).nonOpaque(), BlockSetType.OAK));
+
+    public static final Block WILLOW_TRAPDOOR = registerBlock("willow_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copy(Blocks.OAK_PLANKS).nonOpaque(), BlockSetType.OAK));
+
+    public static final Block WILLOW_FENCE = registerBlock("willow_fence",
+            new FenceBlock(FabricBlockSettings.copy(Blocks.OAK_PLANKS)));
+
+    public static final Block WILLOW_FENCE_GATE = registerBlock("willow_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.copy(Blocks.OAK_PLANKS), WoodType.OAK));
+
+    public static final Block WILLOW_SAPLING = registerBlock("willow_sapling",
+            new SaplingBlock(new AncientSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
+
+    public static final Block POTTED_WILLOW_SAPLING = Registry.register(Registries.BLOCK, new Identifier(ExcessiveBuilding.MODID, "potted_willow_sapling"),
+            new FlowerPotBlock(WILLOW_SAPLING, FabricBlockSettings.copyOf(Blocks.POTTED_OAK_SAPLING).nonOpaque()));
+
+    public static final Block WILLOW_LADDER = registerBlock("willow_ladder",
+            new LadderBlock(FabricBlockSettings.copy(Blocks.LADDER)));
 
 
     private static Block registerBlock(String name, Block block) { registerBlockItem(name, block);
