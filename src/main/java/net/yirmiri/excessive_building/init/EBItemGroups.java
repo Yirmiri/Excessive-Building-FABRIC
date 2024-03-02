@@ -307,12 +307,10 @@ public class EBItemGroups {
                             entries.add(EBBlocks.MUD_TILE_STAIRS);
                             entries.add(EBBlocks.MUD_TILE_VERTICAL_STAIRS);
                             entries.add(EBBlocks.MUD_TILE_SLAB);
-                            entries.add(EBBlocks.MUD_TILE_WALL);
                             entries.add(EBBlocks.SNOW_BRICKS);
                             entries.add(EBBlocks.SNOW_BRICK_STAIRS);
                             entries.add(EBBlocks.SNOW_BRICK_VERTICAL_STAIRS);
                             entries.add(EBBlocks.SNOW_BRICK_SLAB);
-                            entries.add(EBBlocks.SNOW_BRICK_WALL);
                             entries.add(EBBlocks.SANDSTONE_BRICKS);
                             entries.add(EBBlocks.SANDSTONE_BRICK_STAIRS);
                             entries.add(EBBlocks.SANDSTONE_BRICK_VERTICAL_STAIRS);

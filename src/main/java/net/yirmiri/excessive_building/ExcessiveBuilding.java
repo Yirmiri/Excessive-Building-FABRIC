@@ -6,9 +6,17 @@ import net.yirmiri.excessive_building.init.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.List;
+
 public class ExcessiveBuilding implements ModInitializer {
 	public static final String MODID = "excessive_building";
 	public static final Logger LOGGER = LoggerFactory.getLogger("MODID");
+
+	//Capes For Devs and Contributors of an Azurune mod
+	public static final List<String> AZURUNE = List.of("Dev", "Yirmiri", "Nullmiri"); //Developers
+	public static final List<String> UK_UA_TRANSLATORS = List.of("Unroman"); //Ukrainian Translators
+	public static final List<String> CONTRIBUTORS = List.of(); //Contributors
+	public static final List<String> SUPPORTERS = List.of(); //Supporters
 
 	@Override
 	public void onInitialize() {

@@ -8,6 +8,7 @@ Version Release v2.1.3 (Fabric/Quilt: 1.20.1)
 Major Update
 
   Additions
+•   Added developer, contributor, translator, and supporter capes
 •   Added the maple wood set (pastel orange), maple trees can be found in 3 different colors generating in maple forests (a new biome), or bought from wandering traders
 •   Added the willow wood set (pastel green), willow trees can be found generating in swamp biomes or bought from wandering traders
 •   JEED translations have been added for the reaching effect
