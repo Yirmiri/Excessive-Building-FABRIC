@@ -8,7 +8,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
 
 public class LeavesPileBlock extends PlantBlock {
-    protected static final VoxelShape AABB = Block.createCuboidShape(1.0D, 0.0D, 1.0D, 15.0D, 1.5D, 15.0D);
+    protected static final VoxelShape SHAPE = Block.createCuboidShape(1.0D, 0.0D, 1.0D, 15.0D, 1.5D, 15.0D);
 
     public LeavesPileBlock(Settings settings) {
         super(settings);
@@ -16,6 +16,6 @@ public class LeavesPileBlock extends PlantBlock {
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, net.minecraft.world.BlockView world, BlockPos pos, ShapeContext context) {
-        return AABB;
+        return SHAPE;
     }
 }
