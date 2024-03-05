@@ -10,10 +10,11 @@ import net.yirmiri.excessive_building.init.EBBlocks;
 public class EBVillagers {
 
     private static void registerVillagerTrades() {
+
+        //VILLAGER TRADING IS ON TO-DO BUT IF I FORGET THIS STUPID COMMENT CAN YELL AT ME OVER IT
         TradeOfferHelper.registerVillagerOffers(VillagerProfession.MASON, 5,
             factories -> { factories.add((entity, random) -> new TradeOffer(
-                new ItemStack(Items.EMERALD, 2),
-                new ItemStack(EBBlocks.ASPHALT, 12),
+                new ItemStack(Items.EMERALD, 2), new ItemStack(EBBlocks.ASPHALT, 12),
                 16, 30, 0.05f));
         });
     }

@@ -12,6 +12,8 @@ public class ExcessiveBuildingClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
+
+        //TRANSLUCENT
         BlockRenderLayerMap.INSTANCE.putBlock(EBBlocks.FIERY_GLASS, RenderLayer.getTranslucent());
         BlockRenderLayerMap.INSTANCE.putBlock(EBBlocks.FIERY_GLASS_PANE, RenderLayer.getTranslucent());
         BlockRenderLayerMap.INSTANCE.putBlock(EBBlocks.AMETHYST_GLASS, RenderLayer.getTranslucent());
@@ -21,6 +23,7 @@ public class ExcessiveBuildingClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(EBBlocks.RAINBOW_STAINED_GLASS, RenderLayer.getTranslucent());
         BlockRenderLayerMap.INSTANCE.putBlock(EBBlocks.RAINBOW_STAINED_GLASS_PANE, RenderLayer.getTranslucent());
 
+        //CUTOUT
         BlockRenderLayerMap.INSTANCE.putBlock(EBBlocks.FIERY_CLUSTER, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(EBBlocks.KYANITE_CLUSTER, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(EBBlocks.ANCIENT_LEAVES, RenderLayer.getCutout());
@@ -70,6 +73,7 @@ public class ExcessiveBuildingClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(EBBlocks.WILLOW_SAPLING, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(EBBlocks.POTTED_WILLOW_SAPLING, RenderLayer.getCutout());
 
+        //CUTOUT MIPPED
         BlockRenderLayerMap.INSTANCE.putBlock(EBBlocks.COPPER_GRATE, RenderLayer.getCutoutMipped());
         BlockRenderLayerMap.INSTANCE.putBlock(EBBlocks.EXPOSED_COPPER_GRATE, RenderLayer.getCutoutMipped());
         BlockRenderLayerMap.INSTANCE.putBlock(EBBlocks.WEATHERED_COPPER_GRATE, RenderLayer.getCutoutMipped());
@@ -81,6 +85,7 @@ public class ExcessiveBuildingClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(EBBlocks.GOLD_GRATE, RenderLayer.getCutoutMipped());
         BlockRenderLayerMap.INSTANCE.putBlock(EBBlocks.IRON_GRATE, RenderLayer.getCutoutMipped());
 
+        //PARTICLES
         ParticleFactoryRegistry.getInstance().register(EBParticlesTypes.ANCIENT_PARTICLE, FallingLeafParticle.Factory::new);
         ParticleFactoryRegistry.getInstance().register(EBParticlesTypes.ORANGE_MAPLE_PARTICLE, FallingLeafParticle.Factory::new);
         ParticleFactoryRegistry.getInstance().register(EBParticlesTypes.YELLOW_MAPLE_PARTICLE, FallingLeafParticle.Factory::new);

@@ -9,10 +9,9 @@ import net.yirmiri.excessive_building.ExcessiveBuilding;
 
 public class EBItems {
 
+    //not enough items to categorize v_v
     public static final Item FIERY_SHARDS = registerItem("fiery_shards", new Item(new FabricItemSettings()));
-
     public static final Item KYANITE_SHARDS = registerItem("kyanite_shards", new Item(new FabricItemSettings()));
-
     public static final Item ANCIENT_FRUIT = registerItem("ancient_fruit", new Item(new FabricItemSettings().food(EBFoods.ANCIENT_FRUIT)));
 
 

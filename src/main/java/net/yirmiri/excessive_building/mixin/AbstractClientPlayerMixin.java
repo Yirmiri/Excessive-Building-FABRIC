@@ -18,8 +18,8 @@ public abstract class AbstractClientPlayerMixin extends PlayerEntity {
 		super(world, pos, v, profile);
 	}
 
-	@Inject(method = "getCloakTextureLocation", at = @At(value = "HEAD"), cancellable = true)
-	public void getCloakTextureLocation(CallbackInfoReturnable<Identifier> cir) {
+	@Inject(method = "getCapeTexture", at = @At(value = "HEAD"), cancellable = true)
+	public void getCapeTexture(CallbackInfoReturnable<Identifier> cir) {
 		String username = this.getDisplayName().getString();
 		if (ExcessiveBuilding.AZURUNE.contains(username)) cir.setReturnValue(new Identifier(ExcessiveBuilding.MODID, "textures/capes/azurune.png"));
 		if (ExcessiveBuilding.UK_UA_TRANSLATORS.contains(username)) cir.setReturnValue(new Identifier(ExcessiveBuilding.MODID, "textures/capes/eb_contributors_uk_ua.png"));

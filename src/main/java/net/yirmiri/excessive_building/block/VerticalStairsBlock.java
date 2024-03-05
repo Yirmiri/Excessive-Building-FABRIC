@@ -26,31 +26,15 @@ import java.util.stream.Stream;
 public class VerticalStairsBlock extends Block implements Waterloggable {
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
     public static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
+    private static final VoxelShape SHAPE_NORTH = Stream.of(Block.createCuboidShape(0, 0, 8, 8, 16, 16), Block.createCuboidShape(8, 0, 0, 16, 16, 16)).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get();
+    private static final VoxelShape SHAPE_EAST = Stream.of(Block.createCuboidShape(0, 0, 0, 8, 16, 8), Block.createCuboidShape(0, 0, 8, 16, 16, 16)).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get();
+    private static final VoxelShape SHAPE_WEST = Stream.of(Block.createCuboidShape(8, 0, 8, 16, 16, 16), Block.createCuboidShape(0, 0, 0, 16, 16, 8)).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get();
+    private static final VoxelShape SHAPE_SOUTH = Stream.of(Block.createCuboidShape(8, 0, 0, 16, 16, 8), Block.createCuboidShape(0, 0, 0, 8, 16, 16)).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get();
 
     public VerticalStairsBlock(Settings settings) {
         super(settings);
         setDefaultState(getDefaultState().with(Properties.HORIZONTAL_FACING, Direction.NORTH).with(WATERLOGGED, false));
     }
-
-    private static final VoxelShape SHAPE_NORTH = Stream.of(
-            Block.createCuboidShape(0, 0, 8, 8, 16, 16),
-            Block.createCuboidShape(8, 0, 0, 16, 16, 16)
-    ).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get();
-
-    private static final VoxelShape SHAPE_EAST = Stream.of(
-            Block.createCuboidShape(0, 0, 0, 8, 16, 8),
-            Block.createCuboidShape(0, 0, 8, 16, 16, 16)
-    ).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get();
-
-    private static final VoxelShape SHAPE_WEST = Stream.of(
-            Block.createCuboidShape(8, 0, 8, 16, 16, 16),
-            Block.createCuboidShape(0, 0, 0, 16, 16, 8)
-    ).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get();
-
-    private static final VoxelShape SHAPE_SOUTH = Stream.of(
-            Block.createCuboidShape(8, 0, 0, 16, 16, 8),
-            Block.createCuboidShape(0, 0, 0, 8, 16, 16)
-    ).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get();
 
     @Override
     public VoxelShape getOutlineShape(BlockState state, net.minecraft.world.BlockView world, BlockPos pos, ShapeContext context) {

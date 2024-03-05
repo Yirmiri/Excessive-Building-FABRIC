@@ -90,5 +90,33 @@ public class EBFlammableBlockRegistry {
         registry.add(EBBlocks.ANCIENT_WOOD, 5, 5);
         registry.add(EBBlocks.STRIPPED_ANCIENT_LOG, 5, 5);
         registry.add(EBBlocks.STRIPPED_ANCIENT_WOOD, 5, 5);
+
+        registry.add(EBBlocks.CHISELED_MAPLE, 5, 20);
+        registry.add(EBBlocks.MAPLE_MOSAIC, 5, 20);
+        registry.add(EBBlocks.MAPLE_MOSAIC_STAIRS, 5, 20);
+        registry.add(EBBlocks.MAPLE_MOSAIC_SLAB, 5, 20);
+        registry.add(EBBlocks.MAPLE_MOSAIC_VERTICAL_STAIRS, 5, 20);
+        registry.add(EBBlocks.MAPLE_VERTICAL_STAIRS, 5, 20);
+        registry.add(EBBlocks.MAPLE_LOG, 5, 5);
+        registry.add(EBBlocks.MAPLE_WOOD, 5, 5);
+        registry.add(EBBlocks.STRIPPED_MAPLE_LOG, 5, 5);
+        registry.add(EBBlocks.STRIPPED_MAPLE_WOOD, 5, 5);
+
+        registry.add(EBBlocks.CHISELED_WILLOW, 5, 20);
+        registry.add(EBBlocks.WILLOW_MOSAIC, 5, 20);
+        registry.add(EBBlocks.WILLOW_MOSAIC_STAIRS, 5, 20);
+        registry.add(EBBlocks.WILLOW_MOSAIC_SLAB, 5, 20);
+        registry.add(EBBlocks.WILLOW_MOSAIC_VERTICAL_STAIRS, 5, 20);
+        registry.add(EBBlocks.WILLOW_VERTICAL_STAIRS, 5, 20);
+        registry.add(EBBlocks.WILLOW_LOG, 5, 5);
+        registry.add(EBBlocks.WILLOW_WOOD, 5, 5);
+        registry.add(EBBlocks.STRIPPED_WILLOW_LOG, 5, 5);
+        registry.add(EBBlocks.STRIPPED_WILLOW_WOOD, 5, 5);
+
+        registry.add(EBBlocks.ANCIENT_LEAVES, 30, 60);
+        registry.add(EBBlocks.UNLIT_ANCIENT_LEAVES, 30, 60);
+        registry.add(EBBlocks.RED_MAPLE_LEAVES, 30, 60);
+        registry.add(EBBlocks.ORANGE_MAPLE_LEAVES, 30, 60);
+        registry.add(EBBlocks.YELLOW_MAPLE_LEAVES, 30, 60);
     }
 }

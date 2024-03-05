@@ -372,14 +372,17 @@ public class EBItemGroups {
                             entries.add(EBBlocks.SULFURIC_BRIMSTONE_SLAB);
                             entries.add(EBBlocks.POLISHED_SULFURIC_BRIMSTONE);
                             entries.add(EBBlocks.POLISHED_SULFURIC_BRIMSTONE_STAIRS);
+                            entries.add(EBBlocks.POLISHED_SULFURIC_BRIMSTONE_VERTICAL_STAIRS);
                             entries.add(EBBlocks.POLISHED_SULFURIC_BRIMSTONE_SLAB);
                             entries.add(EBBlocks.POLISHED_SULFURIC_BRIMSTONE_WALL);
                             entries.add(EBBlocks.POLISHED_SULFURIC_BRIMSTONE_BRICKS);
                             entries.add(EBBlocks.POLISHED_SULFURIC_BRIMSTONE_BRICK_STAIRS);
+                            entries.add(EBBlocks.POLISHED_SULFURIC_BRIMSTONE_BRICK_VERTICAL_STAIRS);
                             entries.add(EBBlocks.POLISHED_SULFURIC_BRIMSTONE_BRICK_SLAB);
                             entries.add(EBBlocks.POLISHED_SULFURIC_BRIMSTONE_BRICK_WALL);
                             entries.add(EBBlocks.POLISHED_SULFURIC_BRIMSTONE_TILES);
                             entries.add(EBBlocks.POLISHED_SULFURIC_BRIMSTONE_TILE_STAIRS);
+                            entries.add(EBBlocks.POLISHED_SULFURIC_BRIMSTONE_TILE_VERTICAL_STAIRS);
                             entries.add(EBBlocks.POLISHED_SULFURIC_BRIMSTONE_TILE_SLAB);
                             entries.add(EBBlocks.POLISHED_SULFURIC_BRIMSTONE_TILE_WALL);
                             entries.add(EBBlocks.BRIMSTONE_WINDOW);
@@ -544,6 +547,9 @@ public class EBItemGroups {
                             entries.add(EBBlocks.KYANITE_BLOCK);
                             entries.add(EBBlocks.KYANITE_CLUSTER);
                             entries.add(EBItems.KYANITE_SHARDS);
+                            entries.add(EBBlocks.RED_MAPLE_LEAVES_PILE);
+                            entries.add(EBBlocks.ORANGE_MAPLE_LEAVES_PILE);
+                            entries.add(EBBlocks.YELLOW_MAPLE_LEAVES_PILE);
                             entries.add(EBBlocks.RED_MAPLE_SAPLING);
                             entries.add(EBBlocks.ORANGE_MAPLE_SAPLING);
                             entries.add(EBBlocks.YELLOW_MAPLE_SAPLING);
