@@ -1,4 +1,4 @@
-package net.yirmiri.excessive_building.init;
+package net.yirmiri.excessive_building.registry;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -17,67 +17,67 @@ import net.yirmiri.excessive_building.worldgen.tree.*;
 public class EBBlocks {
 
     //MOSAIC & CHISELED WOOD
-    public static final Block OAK_MOSAIC = registerBlock("oak_mosaic", new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS)));
-    public static final Block OAK_MOSAIC_STAIRS = registerBlock("oak_mosaic_stairs", new StairsBlock(OAK_MOSAIC.getDefaultState(), FabricBlockSettings.copy(Blocks.OAK_PLANKS)));
-    public static final Block OAK_MOSAIC_SLAB = registerBlock("oak_mosaic_slab", new SlabBlock(FabricBlockSettings.copy(Blocks.OAK_PLANKS)));
-    public static final Block CHISELED_OAK = registerBlock("chiseled_oak", new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS)));
-    public static final Block SPRUCE_MOSAIC = registerBlock("spruce_mosaic", new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS)));
-    public static final Block SPRUCE_MOSAIC_STAIRS = registerBlock("spruce_mosaic_stairs", new StairsBlock(SPRUCE_MOSAIC.getDefaultState(), FabricBlockSettings.copy(Blocks.OAK_PLANKS)));
-    public static final Block SPRUCE_MOSAIC_SLAB = registerBlock("spruce_mosaic_slab", new SlabBlock(FabricBlockSettings.copy(Blocks.OAK_PLANKS)));
-    public static final Block CHISELED_SPRUCE = registerBlock("chiseled_spruce", new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS)));
-    public static final Block BIRCH_MOSAIC = registerBlock("birch_mosaic", new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS)));
-    public static final Block BIRCH_MOSAIC_STAIRS = registerBlock("birch_mosaic_stairs", new StairsBlock(BIRCH_MOSAIC.getDefaultState(), FabricBlockSettings.copy(Blocks.OAK_PLANKS)));
-    public static final Block BIRCH_MOSAIC_SLAB = registerBlock("birch_mosaic_slab", new SlabBlock(FabricBlockSettings.copy(Blocks.OAK_PLANKS)));
-    public static final Block CHISELED_BIRCH = registerBlock("chiseled_birch", new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS)));
-    public static final Block JUNGLE_MOSAIC = registerBlock("jungle_mosaic", new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS)));
-    public static final Block JUNGLE_MOSAIC_STAIRS = registerBlock("jungle_mosaic_stairs", new StairsBlock(JUNGLE_MOSAIC.getDefaultState(), FabricBlockSettings.copy(Blocks.OAK_PLANKS)));
-    public static final Block JUNGLE_MOSAIC_SLAB = registerBlock("jungle_mosaic_slab", new SlabBlock(FabricBlockSettings.copy(Blocks.OAK_PLANKS)));
-    public static final Block CHISELED_JUNGLE = registerBlock("chiseled_jungle", new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS)));
-    public static final Block ACACIA_MOSAIC = registerBlock("acacia_mosaic", new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS)));
-    public static final Block ACACIA_MOSAIC_STAIRS = registerBlock("acacia_mosaic_stairs", new StairsBlock(ACACIA_MOSAIC.getDefaultState(), FabricBlockSettings.copy(Blocks.OAK_PLANKS)));
-    public static final Block ACACIA_MOSAIC_SLAB = registerBlock("acacia_mosaic_slab", new SlabBlock(FabricBlockSettings.copy(Blocks.OAK_PLANKS)));
-    public static final Block CHISELED_ACACIA = registerBlock("chiseled_acacia", new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS)));
-    public static final Block DARK_OAK_MOSAIC = registerBlock("dark_oak_mosaic", new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS)));
-    public static final Block DARK_OAK_MOSAIC_STAIRS = registerBlock("dark_oak_mosaic_stairs", new StairsBlock(DARK_OAK_MOSAIC.getDefaultState(), FabricBlockSettings.copy(Blocks.OAK_PLANKS)));
-    public static final Block DARK_OAK_MOSAIC_SLAB = registerBlock("dark_oak_mosaic_slab", new SlabBlock(FabricBlockSettings.copy(Blocks.OAK_PLANKS)));
-    public static final Block CHISELED_DARK_OAK = registerBlock("chiseled_dark_oak", new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS)));
-    public static final Block CRIMSON_MOSAIC = registerBlock("crimson_mosaic", new Block(FabricBlockSettings.copy(Blocks.CRIMSON_PLANKS)));
-    public static final Block CRIMSON_MOSAIC_STAIRS = registerBlock("crimson_mosaic_stairs", new StairsBlock(CRIMSON_MOSAIC.getDefaultState(), FabricBlockSettings.copy(Blocks.CRIMSON_PLANKS)));
-    public static final Block CRIMSON_MOSAIC_SLAB = registerBlock("crimson_mosaic_slab", new SlabBlock(FabricBlockSettings.copy(Blocks.CRIMSON_PLANKS)));
-    public static final Block CHISELED_CRIMSON = registerBlock("chiseled_crimson", new Block(FabricBlockSettings.copy(Blocks.CRIMSON_PLANKS)));
-    public static final Block WARPED_MOSAIC = registerBlock("warped_mosaic", new Block(FabricBlockSettings.copy(Blocks.WARPED_PLANKS)));
-    public static final Block WARPED_MOSAIC_STAIRS = registerBlock("warped_mosaic_stairs", new StairsBlock(WARPED_MOSAIC.getDefaultState(), FabricBlockSettings.copy(Blocks.WARPED_PLANKS)));
-    public static final Block WARPED_MOSAIC_SLAB = registerBlock("warped_mosaic_slab", new SlabBlock(FabricBlockSettings.copy(Blocks.WARPED_PLANKS)));
-    public static final Block CHISELED_WARPED = registerBlock("chiseled_warped", new Block(FabricBlockSettings.copy(Blocks.WARPED_PLANKS)));
-    public static final Block MANGROVE_MOSAIC = registerBlock("mangrove_mosaic", new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS)));
-    public static final Block MANGROVE_MOSAIC_STAIRS = registerBlock("mangrove_mosaic_stairs", new StairsBlock(MANGROVE_MOSAIC.getDefaultState(), FabricBlockSettings.copy(Blocks.OAK_PLANKS)));
-    public static final Block MANGROVE_MOSAIC_SLAB = registerBlock("mangrove_mosaic_slab", new SlabBlock(FabricBlockSettings.copy(Blocks.OAK_PLANKS)));
-    public static final Block MANGROVE_MOSAIC_VERTICAL_STAIRS = registerBlock("mangrove_mosaic_vertical_stairs", new VerticalStairsBlock(FabricBlockSettings.copy(Blocks.OAK_PLANKS)));
-    public static final Block MANGROVE_VERTICAL_STAIRS = registerBlock("mangrove_vertical_stairs", new VerticalStairsBlock(FabricBlockSettings.copy(Blocks.OAK_PLANKS)));
-    public static final Block CHISELED_MANGROVE = registerBlock("chiseled_mangrove", new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS)));
-    public static final Block CHERRY_MOSAIC = registerBlock("cherry_mosaic", new Block(FabricBlockSettings.copy(Blocks.CHERRY_PLANKS)));
-    public static final Block CHERRY_MOSAIC_STAIRS = registerBlock("cherry_mosaic_stairs", new StairsBlock(CHERRY_MOSAIC.getDefaultState(), FabricBlockSettings.copy(Blocks.CHERRY_PLANKS)));
-    public static final Block CHERRY_MOSAIC_SLAB = registerBlock("cherry_mosaic_slab", new SlabBlock(FabricBlockSettings.copy(Blocks.CHERRY_PLANKS)));
-    public static final Block CHERRY_MOSAIC_VERTICAL_STAIRS = registerBlock("cherry_mosaic_vertical_stairs", new VerticalStairsBlock(FabricBlockSettings.copy(Blocks.CHERRY_PLANKS)));
-    public static final Block CHERRY_VERTICAL_STAIRS = registerBlock("cherry_vertical_stairs", new VerticalStairsBlock(FabricBlockSettings.copy(Blocks.CHERRY_PLANKS)));
-    public static final Block CHISELED_CHERRY = registerBlock("chiseled_cherry", new Block(FabricBlockSettings.copy(Blocks.CHERRY_PLANKS)));
-    public static final Block CHISELED_BAMBOO = registerBlock("chiseled_bamboo", new Block(FabricBlockSettings.copy(Blocks.BAMBOO_PLANKS)));
-    public static final Block BAMBOO_MOSAIC_VERTICAL_STAIRS = registerBlock("bamboo_mosaic_vertical_stairs", new VerticalStairsBlock(FabricBlockSettings.copy(Blocks.BAMBOO_PLANKS)));
-    public static final Block BAMBOO_VERTICAL_STAIRS = registerBlock("bamboo_vertical_stairs", new VerticalStairsBlock(FabricBlockSettings.copy(Blocks.BAMBOO_PLANKS)));
+    public static final Block OAK_MOSAIC = registerBlock("oak_mosaic", new Block(EBProperties.EBBlockProperties.OAK_WOOD));
+    public static final Block OAK_MOSAIC_STAIRS = registerBlock("oak_mosaic_stairs", new StairsBlock(OAK_MOSAIC.getDefaultState(), EBProperties.EBBlockProperties.OAK_WOOD));
+    public static final Block OAK_MOSAIC_SLAB = registerBlock("oak_mosaic_slab", new SlabBlock(EBProperties.EBBlockProperties.OAK_WOOD));
+    public static final Block CHISELED_OAK = registerBlock("chiseled_oak", new Block(EBProperties.EBBlockProperties.OAK_WOOD));
+    public static final Block SPRUCE_MOSAIC = registerBlock("spruce_mosaic", new Block(EBProperties.EBBlockProperties.SPRUCE_WOOD));
+    public static final Block SPRUCE_MOSAIC_STAIRS = registerBlock("spruce_mosaic_stairs", new StairsBlock(SPRUCE_MOSAIC.getDefaultState(), EBProperties.EBBlockProperties.SPRUCE_WOOD));
+    public static final Block SPRUCE_MOSAIC_SLAB = registerBlock("spruce_mosaic_slab", new SlabBlock(EBProperties.EBBlockProperties.SPRUCE_WOOD));
+    public static final Block CHISELED_SPRUCE = registerBlock("chiseled_spruce", new Block(EBProperties.EBBlockProperties.SPRUCE_WOOD));
+    public static final Block BIRCH_MOSAIC = registerBlock("birch_mosaic", new Block(EBProperties.EBBlockProperties.BIRCH_WOOD));
+    public static final Block BIRCH_MOSAIC_STAIRS = registerBlock("birch_mosaic_stairs", new StairsBlock(BIRCH_MOSAIC.getDefaultState(), EBProperties.EBBlockProperties.BIRCH_WOOD));
+    public static final Block BIRCH_MOSAIC_SLAB = registerBlock("birch_mosaic_slab", new SlabBlock(EBProperties.EBBlockProperties.BIRCH_WOOD));
+    public static final Block CHISELED_BIRCH = registerBlock("chiseled_birch", new Block(EBProperties.EBBlockProperties.BIRCH_WOOD));
+    public static final Block JUNGLE_MOSAIC = registerBlock("jungle_mosaic", new Block(EBProperties.EBBlockProperties.JUNGLE_WOOD));
+    public static final Block JUNGLE_MOSAIC_STAIRS = registerBlock("jungle_mosaic_stairs", new StairsBlock(JUNGLE_MOSAIC.getDefaultState(), EBProperties.EBBlockProperties.JUNGLE_WOOD));
+    public static final Block JUNGLE_MOSAIC_SLAB = registerBlock("jungle_mosaic_slab", new SlabBlock(EBProperties.EBBlockProperties.JUNGLE_WOOD));
+    public static final Block CHISELED_JUNGLE = registerBlock("chiseled_jungle", new Block(EBProperties.EBBlockProperties.JUNGLE_WOOD));
+    public static final Block ACACIA_MOSAIC = registerBlock("acacia_mosaic", new Block(EBProperties.EBBlockProperties.ACACIA_WOOD));
+    public static final Block ACACIA_MOSAIC_STAIRS = registerBlock("acacia_mosaic_stairs", new StairsBlock(ACACIA_MOSAIC.getDefaultState(), EBProperties.EBBlockProperties.ACACIA_WOOD));
+    public static final Block ACACIA_MOSAIC_SLAB = registerBlock("acacia_mosaic_slab", new SlabBlock(EBProperties.EBBlockProperties.ACACIA_WOOD));
+    public static final Block CHISELED_ACACIA = registerBlock("chiseled_acacia", new Block(EBProperties.EBBlockProperties.ACACIA_WOOD));
+    public static final Block DARK_OAK_MOSAIC = registerBlock("dark_oak_mosaic", new Block(EBProperties.EBBlockProperties.DARK_OAK_WOOD));
+    public static final Block DARK_OAK_MOSAIC_STAIRS = registerBlock("dark_oak_mosaic_stairs", new StairsBlock(DARK_OAK_MOSAIC.getDefaultState(), EBProperties.EBBlockProperties.DARK_OAK_WOOD));
+    public static final Block DARK_OAK_MOSAIC_SLAB = registerBlock("dark_oak_mosaic_slab", new SlabBlock(EBProperties.EBBlockProperties.DARK_OAK_WOOD));
+    public static final Block CHISELED_DARK_OAK = registerBlock("chiseled_dark_oak", new Block(EBProperties.EBBlockProperties.DARK_OAK_WOOD));
+    public static final Block CRIMSON_MOSAIC = registerBlock("crimson_mosaic", new Block(EBProperties.EBBlockProperties.CRIMSON_WOOD));
+    public static final Block CRIMSON_MOSAIC_STAIRS = registerBlock("crimson_mosaic_stairs", new StairsBlock(CRIMSON_MOSAIC.getDefaultState(), EBProperties.EBBlockProperties.CRIMSON_WOOD));
+    public static final Block CRIMSON_MOSAIC_SLAB = registerBlock("crimson_mosaic_slab", new SlabBlock(EBProperties.EBBlockProperties.CRIMSON_WOOD));
+    public static final Block CHISELED_CRIMSON = registerBlock("chiseled_crimson", new Block(EBProperties.EBBlockProperties.CRIMSON_WOOD));
+    public static final Block WARPED_MOSAIC = registerBlock("warped_mosaic", new Block(EBProperties.EBBlockProperties.WARPED_WOOD));
+    public static final Block WARPED_MOSAIC_STAIRS = registerBlock("warped_mosaic_stairs", new StairsBlock(WARPED_MOSAIC.getDefaultState(), EBProperties.EBBlockProperties.WARPED_WOOD));
+    public static final Block WARPED_MOSAIC_SLAB = registerBlock("warped_mosaic_slab", new SlabBlock(EBProperties.EBBlockProperties.WARPED_WOOD));
+    public static final Block CHISELED_WARPED = registerBlock("chiseled_warped", new Block(EBProperties.EBBlockProperties.WARPED_WOOD));
+    public static final Block MANGROVE_MOSAIC = registerBlock("mangrove_mosaic", new Block(EBProperties.EBBlockProperties.MANGROVE_WOOD));
+    public static final Block MANGROVE_MOSAIC_STAIRS = registerBlock("mangrove_mosaic_stairs", new StairsBlock(MANGROVE_MOSAIC.getDefaultState(), EBProperties.EBBlockProperties.MANGROVE_WOOD));
+    public static final Block MANGROVE_MOSAIC_SLAB = registerBlock("mangrove_mosaic_slab", new SlabBlock(EBProperties.EBBlockProperties.MANGROVE_WOOD));
+    public static final Block MANGROVE_MOSAIC_VERTICAL_STAIRS = registerBlock("mangrove_mosaic_vertical_stairs", new VerticalStairsBlock(EBProperties.EBBlockProperties.MANGROVE_WOOD));
+    public static final Block MANGROVE_VERTICAL_STAIRS = registerBlock("mangrove_vertical_stairs", new VerticalStairsBlock(EBProperties.EBBlockProperties.MANGROVE_WOOD));
+    public static final Block CHISELED_MANGROVE = registerBlock("chiseled_mangrove", new Block(EBProperties.EBBlockProperties.MANGROVE_WOOD));
+    public static final Block CHERRY_MOSAIC = registerBlock("cherry_mosaic", new Block(EBProperties.EBBlockProperties.CHERRY_WOOD));
+    public static final Block CHERRY_MOSAIC_STAIRS = registerBlock("cherry_mosaic_stairs", new StairsBlock(CHERRY_MOSAIC.getDefaultState(), EBProperties.EBBlockProperties.CHERRY_WOOD));
+    public static final Block CHERRY_MOSAIC_SLAB = registerBlock("cherry_mosaic_slab", new SlabBlock(EBProperties.EBBlockProperties.CHERRY_WOOD));
+    public static final Block CHERRY_MOSAIC_VERTICAL_STAIRS = registerBlock("cherry_mosaic_vertical_stairs", new VerticalStairsBlock(EBProperties.EBBlockProperties.CHERRY_WOOD));
+    public static final Block CHERRY_VERTICAL_STAIRS = registerBlock("cherry_vertical_stairs", new VerticalStairsBlock(EBProperties.EBBlockProperties.CHERRY_WOOD));
+    public static final Block CHISELED_CHERRY = registerBlock("chiseled_cherry", new Block(EBProperties.EBBlockProperties.CHERRY_WOOD));
+    public static final Block CHISELED_BAMBOO = registerBlock("chiseled_bamboo", new Block(EBProperties.EBBlockProperties.BAMBOO_WOOD));
+    public static final Block BAMBOO_MOSAIC_VERTICAL_STAIRS = registerBlock("bamboo_mosaic_vertical_stairs", new VerticalStairsBlock(EBProperties.EBBlockProperties.BAMBOO_WOOD));
+    public static final Block BAMBOO_VERTICAL_STAIRS = registerBlock("bamboo_vertical_stairs", new VerticalStairsBlock(EBProperties.EBBlockProperties.BAMBOO_WOOD));
 
     //COBBLED BRICKS
-    public static final Block COBBLESTONE_BRICKS = registerBlock("cobblestone_bricks", new Block(FabricBlockSettings.copy(Blocks.COBBLESTONE).requiresTool()));
-    public static final Block COBBLESTONE_BRICK_STAIRS = registerBlock("cobblestone_brick_stairs", new StairsBlock(COBBLESTONE_BRICKS.getDefaultState(), FabricBlockSettings.copy(Blocks.COBBLESTONE).requiresTool()));
-    public static final Block COBBLESTONE_BRICK_SLAB = registerBlock("cobblestone_brick_slab", new SlabBlock(FabricBlockSettings.copy(Blocks.COBBLESTONE).requiresTool()));
-    public static final Block COBBLESTONE_BRICK_WALL = registerBlock("cobblestone_brick_wall", new WallBlock(FabricBlockSettings.copy(Blocks.COBBLESTONE).requiresTool()));
-    public static final Block COBBLED_DEEPSLATE_BRICKS = registerBlock("cobbled_deepslate_bricks", new Block(FabricBlockSettings.copy(Blocks.COBBLED_DEEPSLATE).requiresTool()));
-    public static final Block COBBLED_DEEPSLATE_BRICK_STAIRS = registerBlock("cobbled_deepslate_brick_stairs", new StairsBlock(COBBLED_DEEPSLATE_BRICKS.getDefaultState(), FabricBlockSettings.copy(Blocks.COBBLED_DEEPSLATE).requiresTool()));
-    public static final Block COBBLED_DEEPSLATE_BRICK_SLAB = registerBlock("cobbled_deepslate_brick_slab", new SlabBlock(FabricBlockSettings.copy(Blocks.COBBLED_DEEPSLATE).requiresTool()));
-    public static final Block COBBLED_DEEPSLATE_BRICK_WALL = registerBlock("cobbled_deepslate_brick_wall", new WallBlock(FabricBlockSettings.copy(Blocks.COBBLED_DEEPSLATE).requiresTool()));
-    public static final Block BLACKSTONE_BRICKS = registerBlock("blackstone_bricks", new Block(FabricBlockSettings.copy(Blocks.BLACKSTONE).requiresTool()));
-    public static final Block BLACKSTONE_BRICK_STAIRS = registerBlock("blackstone_brick_stairs", new StairsBlock(BLACKSTONE_BRICKS.getDefaultState(), FabricBlockSettings.copy(Blocks.BLACKSTONE).requiresTool()));
-    public static final Block BLACKSTONE_BRICK_SLAB = registerBlock("blackstone_brick_slab", new SlabBlock(FabricBlockSettings.copy(Blocks.BLACKSTONE).requiresTool()));
-    public static final Block BLACKSTONE_BRICK_WALL = registerBlock("blackstone_brick_wall", new WallBlock(FabricBlockSettings.copy(Blocks.BLACKSTONE).requiresTool()));
+    public static final Block COBBLESTONE_BRICKS = registerBlock("cobblestone_bricks", new Block(EBProperties.EBBlockProperties.COBBLED_STONE));
+    public static final Block COBBLESTONE_BRICK_STAIRS = registerBlock("cobblestone_brick_stairs", new StairsBlock(COBBLESTONE_BRICKS.getDefaultState(), EBProperties.EBBlockProperties.COBBLED_STONE));
+    public static final Block COBBLESTONE_BRICK_SLAB = registerBlock("cobblestone_brick_slab", new SlabBlock(EBProperties.EBBlockProperties.COBBLED_STONE));
+    public static final Block COBBLESTONE_BRICK_WALL = registerBlock("cobblestone_brick_wall", new WallBlock(EBProperties.EBBlockProperties.COBBLED_STONE));
+    public static final Block COBBLED_DEEPSLATE_BRICKS = registerBlock("cobbled_deepslate_bricks", new Block(EBProperties.EBBlockProperties.COBBLED_DEEPSLATE));
+    public static final Block COBBLED_DEEPSLATE_BRICK_STAIRS = registerBlock("cobbled_deepslate_brick_stairs", new StairsBlock(COBBLED_DEEPSLATE_BRICKS.getDefaultState(), EBProperties.EBBlockProperties.COBBLED_DEEPSLATE));
+    public static final Block COBBLED_DEEPSLATE_BRICK_SLAB = registerBlock("cobbled_deepslate_brick_slab", new SlabBlock(EBProperties.EBBlockProperties.COBBLED_DEEPSLATE));
+    public static final Block COBBLED_DEEPSLATE_BRICK_WALL = registerBlock("cobbled_deepslate_brick_wall", new WallBlock(EBProperties.EBBlockProperties.COBBLED_DEEPSLATE));
+    public static final Block BLACKSTONE_BRICKS = registerBlock("blackstone_bricks", new Block(EBProperties.EBBlockProperties.BLACKSTONE));
+    public static final Block BLACKSTONE_BRICK_STAIRS = registerBlock("blackstone_brick_stairs", new StairsBlock(BLACKSTONE_BRICKS.getDefaultState(), EBProperties.EBBlockProperties.BLACKSTONE));
+    public static final Block BLACKSTONE_BRICK_SLAB = registerBlock("blackstone_brick_slab", new SlabBlock(EBProperties.EBBlockProperties.BLACKSTONE));
+    public static final Block BLACKSTONE_BRICK_WALL = registerBlock("blackstone_brick_wall", new WallBlock(EBProperties.EBBlockProperties.BLACKSTONE));
 
     //POLISHED STONES
     public static final Block CRACKED_POLISHED_STONE_BRICKS = registerBlock("cracked_polished_stone_bricks", new Block(FabricBlockSettings.copy(Blocks.STONE_BRICKS).requiresTool()));
@@ -622,7 +622,7 @@ public class EBBlocks {
     public static final Block SMOOTH_BASKETWEAVE_BRICK_WALL = registerBlock("smooth_basketweave_brick_wall", new WallBlock(FabricBlockSettings.copy(Blocks.BRICKS).requiresTool()));
 
     //ANCIENT WOOD
-    public static final Block ANCIENT_PLANKS = registerBlock("ancient_planks", new Block(FabricBlockSettings.copy(Blocks.CHERRY_PLANKS)));
+    public static final Block ANCIENT_PLANKS = registerBlock("ancient_planks", new Block(EBProperties.EBBlockProperties.ANCIENT_WOOD));
     public static final Block ANCIENT_STAIRS = registerBlock("ancient_stairs", new StairsBlock(ANCIENT_PLANKS.getDefaultState(), FabricBlockSettings.copy(EBBlocks.ANCIENT_PLANKS)));
     public static final Block ANCIENT_SLAB = registerBlock("ancient_slab", new SlabBlock(FabricBlockSettings.copy(EBBlocks.ANCIENT_PLANKS)));
     public static final Block ANCIENT_VERTICAL_STAIRS = registerBlock("ancient_vertical_stairs", new VerticalStairsBlock(FabricBlockSettings.copy(EBBlocks.ANCIENT_PLANKS)));
@@ -647,7 +647,7 @@ public class EBBlocks {
     public static final Block UNLIT_ANCIENT_LEAVES = registerBlock("unlit_ancient_leaves", new AncientLeavesBlock(FabricBlockSettings.copy(Blocks.AZALEA_LEAVES)));
 
     //MAPLE WOOD
-    public static final Block MAPLE_PLANKS = registerBlock("maple_planks", new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS)));
+    public static final Block MAPLE_PLANKS = registerBlock("maple_planks", new Block(EBProperties.EBBlockProperties.MAPLE_WOOD));
     public static final Block MAPLE_STAIRS = registerBlock("maple_stairs", new StairsBlock(MAPLE_PLANKS.getDefaultState(), FabricBlockSettings.copy(EBBlocks.MAPLE_PLANKS)));
     public static final Block MAPLE_SLAB = registerBlock("maple_slab", new SlabBlock(FabricBlockSettings.copy(EBBlocks.MAPLE_PLANKS)));
     public static final Block MAPLE_VERTICAL_STAIRS = registerBlock("maple_vertical_stairs", new VerticalStairsBlock(FabricBlockSettings.copy(EBBlocks.MAPLE_PLANKS)));
@@ -669,7 +669,7 @@ public class EBBlocks {
     public static final Block MAPLE_LADDER = registerBlock("maple_ladder", new LadderBlock(FabricBlockSettings.copy(Blocks.LADDER)));
 
     //WILLOW WOOD
-    public static final Block WILLOW_PLANKS = registerBlock("willow_planks", new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS)));
+    public static final Block WILLOW_PLANKS = registerBlock("willow_planks", new Block(EBProperties.EBBlockProperties.WILLOW_WOOD));
     public static final Block WILLOW_STAIRS = registerBlock("willow_stairs", new StairsBlock(WILLOW_PLANKS.getDefaultState(), FabricBlockSettings.copy(EBBlocks.WILLOW_PLANKS)));
     public static final Block WILLOW_SLAB = registerBlock("willow_slab", new SlabBlock(FabricBlockSettings.copy(EBBlocks.WILLOW_PLANKS)));
     public static final Block WILLOW_VERTICAL_STAIRS = registerBlock("willow_vertical_stairs", new VerticalStairsBlock(FabricBlockSettings.copy(EBBlocks.WILLOW_PLANKS)));

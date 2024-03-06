@@ -4,8 +4,8 @@ import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
 import net.minecraft.client.render.RenderLayer;
-import net.yirmiri.excessive_building.init.EBBlocks;
-import net.yirmiri.excessive_building.init.EBParticlesTypes;
+import net.yirmiri.excessive_building.registry.EBBlocks;
+import net.yirmiri.excessive_building.registry.EBParticlesTypes;
 import net.yirmiri.excessive_building.particle.FallingLeafParticle;
 
 public class ExcessiveBuildingClient implements ClientModInitializer {

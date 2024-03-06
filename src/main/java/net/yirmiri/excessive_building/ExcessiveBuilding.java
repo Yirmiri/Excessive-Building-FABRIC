@@ -2,7 +2,7 @@ package net.yirmiri.excessive_building;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
-import net.yirmiri.excessive_building.init.*;
+import net.yirmiri.excessive_building.registry.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

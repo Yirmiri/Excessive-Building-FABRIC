@@ -1,4 +1,4 @@
-package net.yirmiri.excessive_building.init;
+package net.yirmiri.excessive_building.registry;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
@@ -8,8 +8,6 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.yirmiri.excessive_building.ExcessiveBuilding;
-import net.yirmiri.excessive_building.init.EBBlocks;
-import net.yirmiri.excessive_building.init.EBItems;
 
 public class EBItemGroups {
         public static ItemGroup EXCESSIVE_BUILDING_TAB = Registry.register(Registries.ITEM_GROUP, new Identifier(ExcessiveBuilding.MODID, "excessive_building_tab"),

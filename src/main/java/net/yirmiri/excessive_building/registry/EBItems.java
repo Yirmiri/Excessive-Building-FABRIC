@@ -1,4 +1,4 @@
-package net.yirmiri.excessive_building.init;
+package net.yirmiri.excessive_building.registry;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
@@ -12,7 +12,7 @@ public class EBItems {
     //not enough items to categorize v_v
     public static final Item FIERY_SHARDS = registerItem("fiery_shards", new Item(new FabricItemSettings()));
     public static final Item KYANITE_SHARDS = registerItem("kyanite_shards", new Item(new FabricItemSettings()));
-    public static final Item ANCIENT_FRUIT = registerItem("ancient_fruit", new Item(new FabricItemSettings().food(EBFoods.ANCIENT_FRUIT)));
+    public static final Item ANCIENT_FRUIT = registerItem("ancient_fruit", new Item(new FabricItemSettings().food(EBProperties.EBFoodProperties.ANCIENT_FRUIT)));
 
 
     private static Item registerItem(String name, Item item) {

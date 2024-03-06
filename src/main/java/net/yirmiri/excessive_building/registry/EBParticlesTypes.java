@@ -1,4 +1,4 @@
-package net.yirmiri.excessive_building.init;
+package net.yirmiri.excessive_building.registry;
 import net.fabricmc.fabric.api.particle.v1.FabricParticleTypes;
 import net.minecraft.particle.DefaultParticleType;
 import net.minecraft.registry.Registries;

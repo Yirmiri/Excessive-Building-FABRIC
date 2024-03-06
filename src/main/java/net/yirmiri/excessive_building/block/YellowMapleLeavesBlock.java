@@ -8,7 +8,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
-import net.yirmiri.excessive_building.init.EBParticlesTypes;
+import net.yirmiri.excessive_building.registry.EBParticlesTypes;
 
 public class YellowMapleLeavesBlock extends LeavesBlock {
     public YellowMapleLeavesBlock(AbstractBlock.Settings settings) {

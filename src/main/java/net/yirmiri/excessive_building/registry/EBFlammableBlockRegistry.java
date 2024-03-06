@@ -1,7 +1,6 @@
-package net.yirmiri.excessive_building.init;
+package net.yirmiri.excessive_building.registry;
 
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
-import net.yirmiri.excessive_building.init.EBBlocks;
 
 public class EBFlammableBlockRegistry {
     public static void registerFlammableBlocks() {
